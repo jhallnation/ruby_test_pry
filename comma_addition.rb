@@ -23,4 +23,4 @@ comma_addition ('123,123,123')
 
 
 
-# not done, need to add the numbers seperated by a comma together
+# not done, dont remember the original problem
