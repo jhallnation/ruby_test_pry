@@ -1,12 +1,11 @@
 #reverse a string without using the .reverse method
 
-def string_reverser string 
-   array = string.split(//)
-   count = array.length
-   string.count do {|x, y| y+z}
-   end
+puts 'type in a ward'
+s = gets.chomp
+b = s.length - 1
+
+while b >= 0
+  print s[b]
+  b = b - 1
 end
-
-p string_reverser 'happy'
-
 # not complete
