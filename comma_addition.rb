@@ -1,25 +1,20 @@
-@arr = []
+# add each set of numbers that are separated by comma together then adds the new numbers together
 
 
 def comma_addition number
+  x_arr = []
+  y_arr = []
   num_split = number.split(',')
   num_split.each do |x|
-     @arr << x.split(//)
-   end
-   @arr.map do |y|
-    y.each do |z|
-      z.to_i
-    end
+    x_arr << x.scan(/\d/).map {|i| i.to_i}
   end
-  p @arr
+  x_arr.each do |y|
+    y_arr << y.inject(:+)
+  end
+  p y_arr.inject(:+)
 end
 
-comma_addition ('123,123,123')
-
-
-# def separate_comma(number)
-#   number.to_s.chars.to_a.reverse.each_slice(3).map(&:join).join(",").reverse
-# end
+comma_addition ('234,223,123')
 
 
 

@@ -8,4 +8,3 @@ while b >= 0
   print s[b]
   b = b - 1
 end
-# not complete
