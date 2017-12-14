@@ -20,3 +20,9 @@ def IndexOfVowels s
   s.split('').each_with_index { |x, i| x =~ /[aeiouyAEIOUY]/ and  z << i + 1  }
   return z
 end
+
+ # or
+ 
+def IndexOfVowels s
+  s.chars.map.with_index(1) { |x, i| i if x =~ /[aeiouy]/i  }.compact
+end
