@@ -17,6 +17,6 @@
 
 def IndexOfVowels s
   z = []
-  s.chars.to_a.each_with_index { |x, i| x =~ /[aeiou]/ and  z << i  }
+  s.split('').each_with_index { |x, i| x =~ /[aeiouyAEIOUY]/ and  z << i + 1  }
   return z
 end
