@@ -3,6 +3,7 @@
 # seven_ate9('79712312') => '7712312'
 # seven_ate9('79797') => '777'
 # Input: String Output: String
+# kata from debri
 
 def seven_ate9 s
   a = s.split('')
